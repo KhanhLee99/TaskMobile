@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Screen2 View Controller-->
         <scene sceneID="ZUx-7T-yAM">
             <objects>
                 <viewController storyboardIdentifier="screen2" id="0In-UY-AOj" customClass="Screen2ViewController" customModule="Week4" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,13 +18,13 @@
                         <viewLayoutGuide key="safeArea" id="bfb-jk-qjp"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="glj-Mg-Wba"/>
+                    <tabBarItem key="tabBarItem" title="" image="Calendar" id="glj-Mg-Wba"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZmC-rC-ayN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="778" y="171"/>
+            <point key="canvasLocation" x="-1345" y="177"/>
         </scene>
-        <!--Item 1-->
+        <!--Screen1 View Controller-->
         <scene sceneID="Hbl-10-hjh">
             <objects>
                 <viewController storyboardIdentifier="screen1" id="DLX-Iz-wUf" customClass="Screen1ViewController" customModule="Week4" customModuleProvider="target" sceneMemberID="viewController">
@@ -106,11 +106,11 @@
                             <constraint firstItem="gg7-vz-0fx" firstAttribute="leading" secondItem="aN5-cH-QYZ" secondAttribute="leading" id="mio-v0-GEy"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="iwo-JQ-jCP"/>
+                    <tabBarItem key="tabBarItem" title="" image="Plus" id="iwo-JQ-jCP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGo-60-QPp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1968.1159420289857" y="-556.47321428571422"/>
+            <point key="canvasLocation" x="2084" y="177"/>
         </scene>
         <!--Tabbar Controller-->
         <scene sceneID="Suk-mM-k4P">
@@ -123,13 +123,64 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="DLX-Iz-wUf" kind="relationship" relationship="viewControllers" id="XdZ-BE-6c3"/>
                         <segue destination="0In-UY-AOj" kind="relationship" relationship="viewControllers" id="8T1-0k-CaY"/>
+                        <segue destination="CHM-ky-4C7" kind="relationship" relationship="viewControllers" id="GM5-FH-S4u"/>
+                        <segue destination="DLX-Iz-wUf" kind="relationship" relationship="viewControllers" id="XdZ-BE-6c3"/>
+                        <segue destination="StQ-XP-NX6" kind="relationship" relationship="viewControllers" id="PFM-oo-4f2"/>
+                        <segue destination="chm-hJ-b2O" kind="relationship" relationship="viewControllers" id="xLI-Zm-2SX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ls2-oQ-KoQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1205.7971014492755" y="-556.47321428571422"/>
+            <point key="canvasLocation" x="352" y="-590"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7sf-an-9vg">
+            <objects>
+                <viewController id="CHM-ky-4C7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DuV-ds-jA3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Odv-5N-PJ4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Activity" id="LJc-CR-37v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I9o-hv-c2z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-526" y="177"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c3h-xR-RoR">
+            <objects>
+                <viewController id="StQ-XP-NX6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C0P-DT-bNq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GKs-nl-roe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Document" id="3Ab-1V-AEH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNU-Fi-g6W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="177"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vWH-W3-BBk">
+            <objects>
+                <viewController id="chm-hJ-b2O" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GPa-c2-rod">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="N9H-3x-A8U"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Setting" id="fBw-SF-Wch"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nqd-CK-24j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1206" y="191"/>
         </scene>
         <!--Projects-->
         <scene sceneID="tne-QT-ifu">
@@ -199,6 +250,9 @@
                                                 <state key="normal" title="Create New Task">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btn_click1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7gc-78-rpX"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -274,8 +328,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Activity" width="28" height="28"/>
+        <image name="Calendar" width="51" height="56"/>
+        <image name="Document" width="25.5" height="28"/>
         <image name="Group 5987" width="238.5" height="180"/>
         <image name="Group 8770" width="92" height="34"/>
+        <image name="Plus" width="28" height="28"/>
+        <image name="Setting" width="27" height="28.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

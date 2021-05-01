@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func btn_click(_ sender: UIButton) {
+    @IBAction func btn_click1(_ sender: UIButton) {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let sc1 = sb.instantiateViewController(withIdentifier: "tabbar")
         self.navigationController?.pushViewController(sc1, animated: true)
