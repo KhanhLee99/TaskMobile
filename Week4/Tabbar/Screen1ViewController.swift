@@ -9,6 +9,8 @@ import UIKit
 
 class Screen1ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var viewWrap0: UIView!
+    @IBOutlet weak var viewWrap1: UIView!
     @IBOutlet weak var tableView: UITableView!
     
     let arr1 = ["UX Research", "Awareness Research", "Create New UI - Pertamina", "Moodboard Audience", "Audience Moodboard" ,"Color Pallete", "Tipography Study", "Sketch basic Logo", "Purchase Mockup"]
@@ -73,6 +75,10 @@ class Screen1ViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
 
     func setupUI(){
+        viewWrap0.layer.cornerRadius = 5.0
+        
+        viewWrap1.addBorder(toSide: .Bottom, withColor: UIColor.systemGray5.cgColor, andThickness: 1.0)
+        
         let nib = UINib(nibName: "TaskCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "taskCell")
         
@@ -89,5 +95,27 @@ class Screen1ViewController: UIViewController, UITableViewDelegate, UITableViewD
 //        self.tabBarController?.navigationItem.title = "Task"
 //        let searchBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: nil)
 //        self.tabBarController?.navigationItem.leftBarButtonItem = searchBarButtonItem
+    }
+}
+
+extension UIView {
+
+    enum ViewSide {
+        case Left, Right, Top, Bottom
+    }
+
+    func addBorder(toSide side: ViewSide, withColor color: CGColor, andThickness thickness: CGFloat) {
+
+        let border = CALayer()
+        border.backgroundColor = color
+
+        switch side {
+        case .Left: border.frame = CGRect(x: frame.minX, y: frame.minY, width: thickness, height: frame.height); break
+        case .Right: border.frame = CGRect(x: frame.maxX, y: frame.minY, width: thickness, height: frame.height); break
+        case .Top: border.frame = CGRect(x: frame.minX, y: frame.minY, width: frame.width, height: thickness); break
+        case .Bottom: border.frame = CGRect(x: frame.minX, y: frame.maxY, width: frame.width, height: thickness); break
+        }
+
+        layer.addSublayer(border)
     }
 }
