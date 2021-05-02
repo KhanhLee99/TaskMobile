@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="55" id="KGk-i7-Jjw" customClass="Sc2Cell" customModule="Week4" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4W-uG-HUY">
+                        <rect key="frame" x="0.0" y="17.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Unw-J5-N8Z"/>
+                            <constraint firstAttribute="height" constant="20" id="hrf-vk-yDe"/>
+                        </constraints>
+                        <state key="normal" image="Rectangle 3"/>
+                        <state key="selected" image="Group 8773"/>
+                        <connections>
+                            <action selector="btn_CheckBox:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fYQ-HT-SK9"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfD-Ga-eyS">
+                        <rect key="frame" x="25" y="17" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="oTd-55-2wu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gay-7g-ghO">
+                        <rect key="frame" x="220" y="19" width="100" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="WPB-e0-IPR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="A4W-uG-HUY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="114-8B-mn7"/>
+                    <constraint firstAttribute="trailing" secondItem="Gay-7g-ghO" secondAttribute="trailing" id="6Tq-CL-K3R"/>
+                    <constraint firstItem="Gay-7g-ghO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="79C-wp-XbM"/>
+                    <constraint firstItem="hfD-Ga-eyS" firstAttribute="leading" secondItem="A4W-uG-HUY" secondAttribute="trailing" constant="5" id="9uL-LZ-BFt"/>
+                    <constraint firstItem="A4W-uG-HUY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SN5-94-xRi"/>
+                    <constraint firstItem="hfD-Ga-eyS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bVi-vZ-W0s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnCheckBox" destination="A4W-uG-HUY" id="CpO-h7-ZYZ"/>
+                <outlet property="lblRight" destination="Gay-7g-ghO" id="Gg7-07-Udt"/>
+                <outlet property="lblTask" destination="hfD-Ga-eyS" id="0tD-84-8a4"/>
+            </connections>
+            <point key="canvasLocation" x="182.60869565217394" y="104.12946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 8773" width="16" height="16"/>
+        <image name="Rectangle 3" width="16" height="17"/>
+    </resources>
+</document>

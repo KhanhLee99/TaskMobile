@@ -19,6 +19,10 @@
 		1C51AC1D263CF255005613AB /* Tabbar_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51AC1C263CF255005613AB /* Tabbar_Controller.swift */; };
 		1C51AC1F263D0CB0005613AB /* MH2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51AC1E263D0CB0005613AB /* MH2ViewController.swift */; };
 		1C51AC21263D0F3A005613AB /* Navigation_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51AC20263D0F3A005613AB /* Navigation_Controller.swift */; };
+		1C6A9D2A263E56E60059A13A /* Sc2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A9D28263E56E60059A13A /* Sc2Cell.swift */; };
+		1C6A9D2B263E56E60059A13A /* Sc2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6A9D29263E56E60059A13A /* Sc2Cell.xib */; };
+		1C6A9D30263E626C0059A13A /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A9D2E263E626C0059A13A /* TaskCell.swift */; };
+		1C6A9D31263E626C0059A13A /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6A9D2F263E626C0059A13A /* TaskCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		1C51AC1C263CF255005613AB /* Tabbar_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar_Controller.swift; sourceTree = "<group>"; };
 		1C51AC1E263D0CB0005613AB /* MH2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MH2ViewController.swift; sourceTree = "<group>"; };
 		1C51AC20263D0F3A005613AB /* Navigation_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation_Controller.swift; sourceTree = "<group>"; };
+		1C6A9D28263E56E60059A13A /* Sc2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sc2Cell.swift; sourceTree = "<group>"; };
+		1C6A9D29263E56E60059A13A /* Sc2Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Sc2Cell.xib; sourceTree = "<group>"; };
+		1C6A9D2E263E626C0059A13A /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		1C6A9D2F263E626C0059A13A /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +95,30 @@
 		1C51AC17263CF05C005613AB /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				1C6A9D27263E56B80059A13A /* cell */,
 				1C51AC18263CF076005613AB /* Screen1ViewController.swift */,
 				1C51AC1A263CF0A2005613AB /* Screen2ViewController.swift */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		1C6A9D27263E56B80059A13A /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A9D2D263E62560059A13A /* Task */,
+				1C6A9D28263E56E60059A13A /* Sc2Cell.swift */,
+				1C6A9D29263E56E60059A13A /* Sc2Cell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		1C6A9D2D263E62560059A13A /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A9D2E263E626C0059A13A /* TaskCell.swift */,
+				1C6A9D2F263E626C0059A13A /* TaskCell.xib */,
+			);
+			path = Task;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +178,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C6A9D2B263E56E60059A13A /* Sc2Cell.xib in Resources */,
+				1C6A9D31263E626C0059A13A /* TaskCell.xib in Resources */,
 				1C51AC0E263CEAF5005613AB /* LaunchScreen.storyboard in Resources */,
 				1C51AC0B263CEAF5005613AB /* Assets.xcassets in Resources */,
 				1C51AC06263CEAF5005613AB /* Main.storyboard in Resources */,
@@ -169,6 +199,8 @@
 				1C51ABFF263CEAF5005613AB /* AppDelegate.swift in Sources */,
 				1C51AC1D263CF255005613AB /* Tabbar_Controller.swift in Sources */,
 				1C51AC09263CEAF5005613AB /* Week4.xcdatamodeld in Sources */,
+				1C6A9D2A263E56E60059A13A /* Sc2Cell.swift in Sources */,
+				1C6A9D30263E626C0059A13A /* TaskCell.swift in Sources */,
 				1C51AC21263D0F3A005613AB /* Navigation_Controller.swift in Sources */,
 				1C51AC01263CEAF5005613AB /* SceneDelegate.swift in Sources */,
 				1C51AC1B263CF0A2005613AB /* Screen2ViewController.swift in Sources */,

@@ -8,7 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var btnCreate: UIButton!
+    
     @IBAction func btn_click1(_ sender: UIButton) {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let sc1 = sb.instantiateViewController(withIdentifier: "tabbar")
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
 
     func setupUI(){
 //        self.tabBarController?.navigationItem.title = "Task"
+        btnCreate.layer.cornerRadius = 6.0
         let searchBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: nil)
 //        self.tabBarController?.navigationItem.leftBarButtonItem = searchBarButtonItem
         
