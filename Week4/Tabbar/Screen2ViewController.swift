@@ -7,59 +7,70 @@
 
 import UIKit
 
-class Screen2ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class Screen2ViewController: UIViewController {
     
-    let arr1 = ["UX Research", "ámdh", "fkashf", "bkjdsahkf"]
-    let arr2 = ["sndkf", "ndshkf", "kdhlfk", "ksdkj"]
+    @IBOutlet weak var viewWrap0: UIView!
+    @IBOutlet weak var viewWrap1: UIView!
+    @IBOutlet weak var viewWrapDate1: UIView!
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arr1.count
-    }
+    @IBOutlet weak var branding1: UIView!
+    @IBOutlet weak var branding2: UIView!
+    @IBOutlet weak var branding3: UIView!
+    @IBOutlet weak var branding4: UIView!
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! Sc2Cell
-        cell.lblTask.text = arr1[indexPath.row]
-        cell.lblRight.text = arr2[indexPath.row]
-        return cell
-    }
+    @IBOutlet weak var viewWrapDate2: UIView!
     
-
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var view_wrap: UIView!
-    @IBAction func btn_checkBox(_ sender: UIButton) {
-        if sender.isSelected {
-            sender.isSelected = false
-            view_wrap.layer.borderWidth = 0.0
-//            view_wrap.layer.borderColor = UIColor..cgColor
-        }
-        else {
-            sender.isSelected = true
-            view_wrap.layer.borderWidth = 1.0
-            view_wrap.layer.borderColor = UIColor.red.cgColor
-        }
-    }
+    
+    @IBOutlet weak var viewDescription: UIView!
+    
+    @IBOutlet weak var btnCreate: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
     }
     
+   
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.navigationItem.title = "Create Task"
     }
     
 
     func setupUI(){
-        let nib = UINib(nibName: "Sc2Cell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "cell")
+        viewWrap0.layer.cornerRadius = 5.0
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        viewWrap1.addBorder(toSide: .Bottom, withColor: UIColor.systemGray5.cgColor, andThickness: 1.0)
         
-        tableView.separatorStyle = .none
-        tableView.showsVerticalScrollIndicator = false
+        viewWrapDate1.layer.cornerRadius = 6.0
+        viewWrapDate1.layer.borderWidth = 1.0
+        viewWrap1.layer.borderColor = UIColor.systemGray5.cgColor
+        
+        viewWrapDate2.layer.cornerRadius = 6.0
+        viewWrapDate2.layer.borderWidth = 1.0
+        viewWrapDate2.layer.borderColor = UIColor.systemGray5.cgColor
+        
+        branding1.layer.cornerRadius = 6.0
+        branding2.layer.cornerRadius = 6.0
+        branding3.layer.cornerRadius = 6.0
+        branding4.layer.cornerRadius = 6.0
+        
+        branding4.layer.borderWidth = 1.0
+        branding4.layer.borderColor = UIColor.purple.cgColor
+        
+        
+        viewDescription.layer.cornerRadius = 5.0
+        
+        btnCreate.layer.cornerRadius = 5.0
+        
+        
+
 //        self.tabBarController?.navigationItem.title = "jfdgjku"
 //        let searchBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: nil)
 //        self.tabBarController?.navigationItem.leftBarButtonItem = searchBarButtonItem
     }
+    
+    
+    
 }
+
