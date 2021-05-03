@@ -23,6 +23,7 @@
 		1C6A9D2B263E56E60059A13A /* Sc2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6A9D29263E56E60059A13A /* Sc2Cell.xib */; };
 		1C6A9D30263E626C0059A13A /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A9D2E263E626C0059A13A /* TaskCell.swift */; };
 		1C6A9D31263E626C0059A13A /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6A9D2F263E626C0059A13A /* TaskCell.xib */; };
+		1C8DD6262640533F005D9866 /* TDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD6252640533F005D9866 /* TDViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		1C6A9D29263E56E60059A13A /* Sc2Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Sc2Cell.xib; sourceTree = "<group>"; };
 		1C6A9D2E263E626C0059A13A /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		1C6A9D2F263E626C0059A13A /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		1C8DD6252640533F005D9866 /* TDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				1C6A9D27263E56B80059A13A /* cell */,
 				1C51AC18263CF076005613AB /* Screen1ViewController.swift */,
 				1C51AC1A263CF0A2005613AB /* Screen2ViewController.swift */,
+				1C8DD6252640533F005D9866 /* TDViewController.swift */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				1C51AC03263CEAF5005613AB /* ViewController.swift in Sources */,
 				1C51AC19263CF076005613AB /* Screen1ViewController.swift in Sources */,
 				1C51ABFF263CEAF5005613AB /* AppDelegate.swift in Sources */,
+				1C8DD6262640533F005D9866 /* TDViewController.swift in Sources */,
 				1C51AC1D263CF255005613AB /* Tabbar_Controller.swift in Sources */,
 				1C51AC09263CEAF5005613AB /* Week4.xcdatamodeld in Sources */,
 				1C6A9D2A263E56E60059A13A /* Sc2Cell.swift in Sources */,
