@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C34F60F2640DF01006EE3E8 /* UploadFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C34F60E2640DF01006EE3E8 /* UploadFileViewController.swift */; };
+		1C34F61226410095006EE3E8 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C34F61126410095006EE3E8 /* ImageCell.swift */; };
 		1C51ABFF263CEAF5005613AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51ABFE263CEAF5005613AB /* AppDelegate.swift */; };
 		1C51AC01263CEAF5005613AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51AC00263CEAF5005613AB /* SceneDelegate.swift */; };
 		1C51AC03263CEAF5005613AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51AC02263CEAF5005613AB /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C34F60E2640DF01006EE3E8 /* UploadFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileViewController.swift; sourceTree = "<group>"; };
+		1C34F61126410095006EE3E8 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		1C51ABFB263CEAF5005613AB /* Week4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C51ABFE263CEAF5005613AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C51AC00263CEAF5005613AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C34F61026410000006EE3E8 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				1C34F61126410095006EE3E8 /* ImageCell.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
 		1C51ABF2263CEAF5005613AB = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,7 @@
 				1C51AC18263CF076005613AB /* Screen1ViewController.swift */,
 				1C51AC1A263CF0A2005613AB /* Screen2ViewController.swift */,
 				1C8DD6252640533F005D9866 /* TDViewController.swift */,
+				1C34F60E2640DF01006EE3E8 /* UploadFileViewController.swift */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -108,6 +121,7 @@
 		1C6A9D27263E56B80059A13A /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				1C34F61026410000006EE3E8 /* Collection */,
 				1C6A9D2D263E62560059A13A /* Task */,
 				1C6A9D28263E56E60059A13A /* Sc2Cell.swift */,
 				1C6A9D29263E56E60059A13A /* Sc2Cell.xib */,
@@ -201,8 +215,10 @@
 				1C51AC19263CF076005613AB /* Screen1ViewController.swift in Sources */,
 				1C51ABFF263CEAF5005613AB /* AppDelegate.swift in Sources */,
 				1C8DD6262640533F005D9866 /* TDViewController.swift in Sources */,
+				1C34F61226410095006EE3E8 /* ImageCell.swift in Sources */,
 				1C51AC1D263CF255005613AB /* Tabbar_Controller.swift in Sources */,
 				1C51AC09263CEAF5005613AB /* Week4.xcdatamodeld in Sources */,
+				1C34F60F2640DF01006EE3E8 /* UploadFileViewController.swift in Sources */,
 				1C6A9D2A263E56E60059A13A /* Sc2Cell.swift in Sources */,
 				1C6A9D30263E626C0059A13A /* TaskCell.swift in Sources */,
 				1C51AC21263D0F3A005613AB /* Navigation_Controller.swift in Sources */,
